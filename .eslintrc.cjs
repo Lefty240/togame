@@ -25,6 +25,7 @@ module.exports = {
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
+    camelcase: 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -80,6 +81,7 @@ module.exports = {
         ignores: ['index', 'main'], //需要忽略的组件名
       },
     ],
+
     // 禁止自我赋值
     'no-self-assign': 'warn',
     // 禁止自身比较
@@ -97,7 +99,6 @@ module.exports = {
     // 强制在代码块中使用一致的大括号风格
     'brace-style': 'warn',
     // 强制使用骆驼拼写法命名约定
-    camelcase: 'warn',
     // 强制使用一致的缩进
     indent: 'off',
     // 强制在 JSX 属性中一致地使用双引号或单引号

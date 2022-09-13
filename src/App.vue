@@ -11,10 +11,11 @@ import { zhCN, dateZhCN, NConfigProvider } from 'naive-ui'
 </script>
 
 <template>
-  <n-config-provider :locale="zhCN" :theme="theme">
-    <!-- 容器 -->
+  <!-- <n-config-provider :locale="zhCN" :theme="theme">
+    <!== 容器 ==>
     <router-view></router-view>
-  </n-config-provider>
+  </n-config-provider> -->
+  <router-view></router-view>
 </template>
 
 <style lang="scss" scoped>
