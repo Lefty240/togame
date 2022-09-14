@@ -1,3 +1,10 @@
+/*
+ * @Author: 粟雄
+ * @Date: 2022-09-08 14:51:17
+ * @LastEditors: 粟雄
+ * @LastEditTime: 2022-09-13 11:13:37
+ * @Description:
+ */
 module.exports = {
   tabWidth: 2,
   jsxSingleQuote: true,
@@ -14,4 +21,5 @@ module.exports = {
     },
   ],
   arrowParens: 'always',
+  endOfLine: 'auto',
 }
