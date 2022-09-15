@@ -2,18 +2,19 @@
  * @Author: 粟雄
  * @Date: 2022-09-14 16:29:11
  * @LastEditors: 粟雄
- * @LastEditTime: 2022-09-14 16:37:04
+ * @LastEditTime: 2022-09-14 16:48:25
  * @Description: 
 -->
 <template>
   <div class="home">home</div>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'ComponentName',
-})
+import userStore from '@/store/user/index'
+import { storeToRefs } from 'pinia'
+const store = userStore()
+const { token } = storeToRefs(store)
+console.log(token.value)
 </script>
 
 <style lang="scss" scoped>
